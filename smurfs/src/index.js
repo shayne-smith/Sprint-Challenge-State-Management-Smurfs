@@ -7,6 +7,7 @@ import thunk from 'redux-thunk';
 
 import "./index.css";
 
+import smurfReducer from './store/reducers/smurfReducer'
 import App from "./components/App";
 
 const store = createStore(smurfReducer, applyMiddleware(thunk, logger));
