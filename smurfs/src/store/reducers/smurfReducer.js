@@ -37,7 +37,7 @@ const smurfReducer = (state = initialState, action) => {
         case POST_SMURF_START:
             return {
                 ...state,
-                isFetching: true
+                smurfList: [...state.smurfList, state.formValues]
             };
         case POST_SMURF_SUCCESS:
             return {
